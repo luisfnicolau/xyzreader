@@ -1,0 +1,94 @@
+Applications Graphics Acceleration Info:
+Uptime: 88226387 Realtime: 131527876
+
+** Graphics info for pid 19320 [com.example.xyzreader] **
+
+Recent DisplayList operations
+                        DrawText
+                        DrawText
+                        DrawText
+                        DrawText
+                        RestoreToCount
+            DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+                DrawRenderNode
+                Save
+                ConcatMatrix
+                Save
+                DrawBitmap
+                RestoreToCount
+            DrawRenderNode
+              DrawRenderNode
+                Save
+                ClipRect
+                DrawOval
+                Save
+                ClipRect
+                RestoreToCount
+              Save
+              Translate
+              Save
+              DrawBitmap
+              RestoreToCount
+  DrawRenderNode
+    DrawRenderNode
+      DrawRect
+RestoreToCount
+DrawRect
+DrawRect
+DrawRect
+DrawRect
+DrawShadow
+DrawRect
+DrawRect
+multiDraw
+  DrawText
+DrawText
+DrawText
+multiDraw
+  DrawText
+DrawText
+DrawBitmap
+DrawShadow
+DrawOval
+DrawBitmap
+DrawRect
+
+Caches:
+Current memory usage / total memory usage (bytes):
+  TextureCache          2912896 / 75497472
+  LayerCache           16842752 / 50331648 (numLayers = 3)
+  Garbage layers              0
+  Active layers               0
+  RenderBufferCache           0 /  8388608
+  GradientCache               0 /  1048576
+  PathCache                   0 / 33554432
+  TessellationCache        4464 /  1048576
+  TextDropShadowCache         0 /  6291456
+  PatchCache               1728 /   131072
+  FontRenderer 0 A8     2097152 /  2097152
+  FontRenderer 0 RGBA         0 /        0
+  FontRenderer 0 total  2097152 /  2097152
+Other:
+  FboCache                    0 /        0
+Total memory usage:
+  21858992 bytes, 20.85 MB
+
+Profile data in ms:
+
+	com.example.xyzreader/com.example.xyzreader.ui.ArticleListActivity/android.view.ViewRootImpl@2097cdcc (visibility=8)
+	com.example.xyzreader/com.example.xyzreader.ui.ArticleDetailActivity/android.view.ViewRootImpl@191ef815 (visibility=0)
+View hierarchy:
+
+  com.example.xyzreader/com.example.xyzreader.ui.ArticleListActivity/android.view.ViewRootImpl@2097cdcc
+  46 views, 36,66 kB of display lists
+
+  com.example.xyzreader/com.example.xyzreader.ui.ArticleDetailActivity/android.view.ViewRootImpl@191ef815
+  46 views, 119,55 kB of display lists
+
+
+Total ViewRootImpl: 2
+Total Views:        92
+Total DisplayList:  156,21 kB
+
