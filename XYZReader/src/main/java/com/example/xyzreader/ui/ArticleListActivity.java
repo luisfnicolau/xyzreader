@@ -1,6 +1,7 @@
 package com.example.xyzreader.ui;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.app.LoaderManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -8,9 +9,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
@@ -138,9 +138,18 @@ public class ArticleListActivity extends AppCompatActivity implements
                 public void onClick(View view) {
                     Intent intent = new Intent(Intent.ACTION_VIEW,
                             ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition())));
-                    ActivityOptionsCompat options = ActivityOptionsCompat
-                            .makeSceneTransitionAnimation(activity, view, getString(R.string.listToDetailTrasitionName));
-                    ActivityCompat.startActivity(activity, intent, options.toBundle());
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        Bundle bundle = ActivityOptions
+                                .makeSceneTransitionAnimation(activity)
+                                .toBundle();
+                        startActivity(intent, bundle);
+                    } else {
+                        startActivity(intent);
+                    }
+//                    ActivityOptionsCompat options = ActivityOptionsCompat
+//                            .makeSceneTransitionAnimation(activity, view, getString(R.string.listToDetailTrasitionName));
+//                    ActivityCompat.startActivity(activity, intent, options.toBundle());
                 }
             });
             return vh;

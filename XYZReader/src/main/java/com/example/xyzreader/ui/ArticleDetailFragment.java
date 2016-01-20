@@ -14,10 +14,13 @@ import android.support.v7.graphics.Palette;
 import android.text.Html;
 import android.text.format.DateUtils;
 import android.text.method.LinkMovementMethod;
+import android.transition.Slide;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -75,6 +78,13 @@ public class ArticleDetailFragment extends Fragment implements
         if (getArguments().containsKey(ARG_ITEM_ID)) {
             mItemId = getArguments().getLong(ARG_ITEM_ID);
         }
+
+        Slide slide = new Slide(Gravity.BOTTOM);
+        slide.addTarget(R.id.aaa);
+        slide.setInterpolator(AnimationUtils.loadInterpolator(getActivity(),
+                android.R.interpolator.linear_out_slow_in));
+        slide.setDuration(500);
+        getActivity().getWindow().setExitTransition(slide);
 
         mIsCard = getResources().getBoolean(R.bool.detail_is_card);
         mStatusBarFullOpacityBottom = getResources().getDimensionPixelSize(
