@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together">
+    <fade android:fadingMode="fade_out"
+        android:duration="200">
+        <targets>
+            <target android:targetId="@id/photo_container"></target>
+            <target android:targetId="@id/detail_text_container"></target>
+        </targets>
+    </fade>
     <explode></explode>
+
 
 </transitionSet><!-- From: file:/C:/Users/Luis/Desktop/Prog%20Projects/AndroidStudio/StudioProjects/xyzreader/XYZReader/src/main/res/anim-v21/main_detail_transition.xml -->

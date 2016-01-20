@@ -2147,7 +2147,6 @@ containing a value of this type.
         public static final int detail_body_line_spacing_multiplier=0x7f090000;
     }
     public static final class id {
-        public static final int aaa=0x7f0a0072;
         public static final int action0=0x7f0a007b;
         public static final int action_bar=0x7f0a0057;
         public static final int action_bar_activity_content=0x7f0a0000;
@@ -2188,6 +2187,7 @@ containing a value of this type.
         public static final int customPanel=0x7f0a004b;
         public static final int decor_content_parent=0x7f0a0055;
         public static final int default_activity_button=0x7f0a0040;
+        public static final int detail_text_container=0x7f0a0072;
         public static final int dialog=0x7f0a0030;
         public static final int disableHome=0x7f0a000d;
         public static final int draw_insets_frame_layout=0x7f0a006e;
@@ -2521,6 +2521,8 @@ containing a value of this type.
         public static final int CardView=0x7f0d0081;
         public static final int CardView_Dark=0x7f0d0082;
         public static final int CardView_Light=0x7f0d0083;
+        public static final int DetailActivityTheme=0x7f0d0138;
+        public static final int MainActivityTheme=0x7f0d0139;
         public static final int Platform_AppCompat=0x7f0d0084;
         public static final int Platform_AppCompat_Light=0x7f0d0085;
         public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0d0086;
@@ -2614,8 +2616,8 @@ containing a value of this type.
         public static final int Theme_AppCompat_Light_NoActionBar=0x7f0d00da;
         public static final int Theme_AppCompat_NoActionBar=0x7f0d00db;
         public static final int Theme_Bacon=0x7f0d00dc;
-        public static final int Theme_Bacon_Detail=0x7f0d0138;
-        public static final int Theme_Bacon_Toolbar=0x7f0d0139;
+        public static final int Theme_Bacon_Detail=0x7f0d013a;
+        public static final int Theme_Bacon_Toolbar=0x7f0d013b;
         public static final int ThemeOverlay_AppCompat=0x7f0d00dd;
         public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0d00de;
         public static final int ThemeOverlay_AppCompat_Dark=0x7f0d00df;

@@ -14,13 +14,10 @@ import android.support.v13.app.FragmentStatePagerAdapter;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.transition.Slide;
 import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowInsets;
-import android.view.animation.AnimationUtils;
 
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
@@ -72,9 +69,11 @@ public class ArticleDetailActivity extends AppCompatActivity
                         .alpha((state == ViewPager.SCROLL_STATE_IDLE) ? 1f : 0f)
                         .setDuration(300);
                 if (state == ViewPager.SCROLL_STATE_IDLE) {
-                    fab.animate().translationY(0).setDuration(100);
+//                    fab.animate().translationY(0).setDuration(100);
+                    fab.animate().scaleX(1).scaleY(1).setDuration(100);
                 } else {
-                    fab.animate().translationY(300).setDuration(100);
+//                    fab.animate().translationY(300).setDuration(100);
+                    fab.animate().scaleY(0).scaleX(0).setDuration(100);
                 }
             }
 

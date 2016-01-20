@@ -224,6 +224,20 @@
     <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="android:Widget.Material.TextView.SpinnerItem"/>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget.Material.Toolbar.Button.Navigation">
     </style>
+    <!-- From: file:/C:/Users/Luis/Desktop/Prog%20Projects/AndroidStudio/StudioProjects/xyzreader/XYZReader/src/main/res/values-v21/styles.xml -->
+    <eat-comment/>
+    <style name="DetailActivityTheme" parent="Theme.Bacon">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowExitTransition">@anim/main_detail_transition</item>
+        <item name="android:windowEnterTransition">@anim/main_detail_transition</item>
+    </style>
+    <style name="MainActivityTheme" parent="Theme.Bacon">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowExitTransition">@anim/main_detail_transition</item>
+        <item name="android:windowEnterTransition">@anim/main_detail_transition</item>
+    </style>
+    <!-- From: file:/C:/Users/Luis/Desktop/Prog%20Projects/AndroidStudio/StudioProjects/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-v21/values-v21.xml -->
+    <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme.Material">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -266,9 +280,6 @@
         <item name="android:colorAccent">@color/theme_accent</item>
         <item name="android:toolbarStyle">@style/Theme.Bacon.Toolbar</item>
         <item name="android:fontFamily">Roboto</item>
-        <item name="android:windowContentTransitions">true</item>
-        <item name="android:windowExitTransition">@anim/main_detail_transition</item>
-        <item name="android:windowEnterTransition">@anim/main_detail_transition</item>
     </style>
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">?attr/colorPrimary</item>

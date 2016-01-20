@@ -553,7 +553,6 @@ int drawable photo_background_protection 0x7f020042
 int drawable snackbar_background 0x7f020043
 int drawable white_selectable_item_background_circle 0x7f020044
 int fraction detail_body_line_spacing_multiplier 0x7f090000
-int id aaa 0x7f0a0072
 int id action0 0x7f0a007b
 int id action_bar 0x7f0a0057
 int id action_bar_activity_content 0x7f0a0000
@@ -594,6 +593,7 @@ int id custom 0x7f0a004c
 int id customPanel 0x7f0a004b
 int id decor_content_parent 0x7f0a0055
 int id default_activity_button 0x7f0a0040
+int id detail_text_container 0x7f0a0072
 int id dialog 0x7f0a0030
 int id disableHome 0x7f0a000d
 int id draw_insets_frame_layout 0x7f0a006e
@@ -915,6 +915,8 @@ int style Base_Widget_Design_TabLayout 0x7f0d0080
 int style CardView 0x7f0d0081
 int style CardView_Dark 0x7f0d0082
 int style CardView_Light 0x7f0d0083
+int style DetailActivityTheme 0x7f0d0138
+int style MainActivityTheme 0x7f0d0139
 int style Platform_AppCompat 0x7f0d0084
 int style Platform_AppCompat_Light 0x7f0d0085
 int style Platform_ThemeOverlay_AppCompat_Dark 0x7f0d0086
@@ -1008,8 +1010,8 @@ int style Theme_AppCompat_Light_DialogWhenLarge 0x7f0d00d9
 int style Theme_AppCompat_Light_NoActionBar 0x7f0d00da
 int style Theme_AppCompat_NoActionBar 0x7f0d00db
 int style Theme_Bacon 0x7f0d00dc
-int style Theme_Bacon_Detail 0x7f0d0138
-int style Theme_Bacon_Toolbar 0x7f0d0139
+int style Theme_Bacon_Detail 0x7f0d013a
+int style Theme_Bacon_Toolbar 0x7f0d013b
 int style ThemeOverlay_AppCompat 0x7f0d00dd
 int style ThemeOverlay_AppCompat_ActionBar 0x7f0d00de
 int style ThemeOverlay_AppCompat_Dark 0x7f0d00df

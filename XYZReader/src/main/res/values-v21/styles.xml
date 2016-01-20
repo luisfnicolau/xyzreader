@@ -23,10 +23,20 @@
         <item name="android:colorAccent">@color/theme_accent</item>
         <item name="android:toolbarStyle">@style/Theme.Bacon.Toolbar</item>
         <item name="android:fontFamily">Roboto</item>
+    </style>
+
+    <style name="MainActivityTheme" parent="Theme.Bacon">
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowExitTransition">@anim/main_detail_transition</item>
         <item name="android:windowEnterTransition">@anim/main_detail_transition</item>
     </style>
+
+    <style name="DetailActivityTheme" parent="Theme.Bacon">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowExitTransition">@anim/main_detail_transition</item>
+        <item name="android:windowEnterTransition">@anim/main_detail_transition</item>
+    </style>
+
 
     <style name="Theme.Bacon.Toolbar" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">?attr/colorPrimary</item>
